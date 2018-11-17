@@ -1,0 +1,139 @@
+/* 需要引入公共样式在index.less里面引入 就没有必要在页面中引入多个文件减少请求*/
+@import 'base.less';
+//<!-- 轮播图区域 -->
+#slide{
+width: 100%;
+height: 4.72972972972973rem;
+.slide, img {
+  width: 100%;
+  height: 4.72972972972973rem;
+}
+.swiper-container {
+  width: 100%;
+  height: 4.72972972972973rem;
+}
+}
+/*导航区域样式*/
+#nav {
+  margin-top: 0.13513513513513514rem;
+  ul {
+    padding: 0.2702702702702703rem;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      width: 25%;
+      text-align: center;
+      padding: 0.13513513513513514rem;
+      a {
+        img {
+          width: 1.0810810810810811rem;
+          height: 1.0810810810810811rem;
+        }
+      }
+    }
+  }
+}
+/*秒杀区域样式*/
+#main {
+  background-color: #f5f5f5;
+  padding: 0.5405405405405406rem 0.2702702702702703rem 0.5405405405405406rem;
+  .seckill {
+    box-shadow: 0rem 0rem 0.02702702702702703rem @border-color;
+    background-color: #fff;
+    margin-bottom: 0.13513513513513514rem;
+    .seckill-title {
+      width: 100%;
+      height: 0.8108108108108109rem;
+      line-height: 0.8108108108108109rem;
+      > img {
+        width: 0.5405405405405406rem;
+        height: 0.6756756756756757rem;
+      }
+      .seckill-text {
+        margin-left: 0.2702702702702703rem;
+        color: @main-color;
+      }
+      .seckill-time {
+        margin-left: 0.13513513513513514rem;
+        padding-top: 0.21621621621621623rem;
+        > span {
+          display: inline-block;
+          width: 0.40540540540540543rem;
+          height: 0.40540540540540543rem;
+          background-color: #000;
+          color: white;
+          margin-left: 0.13513513513513514rem;
+          line-height: 0.40540540540540543rem;
+          text-align: center;
+          font-size: 0.3783783783783784rem;
+          &:nth-child(3n) {
+            width: 0.13513513513513514rem;
+            background-color: #fff;
+            font-weight: bold;
+            color: #000;
+          }
+        }
+      }
+      .seckill-more {
+        float: right;
+        padding: 0 0.2702702702702703rem 0;
+      }
+    }
+    > ul {
+      display: flex;
+      > li {
+        flex: 1;
+        > a {
+          text-align: center;
+          font-size: 0.32432432432432434rem;
+          > img {
+            width: 2.972972972972973rem;
+            height: 2.972972972972973rem;
+          }
+          > p {
+            > span {
+              color: @main-color;
+            }
+          }
+        }
+      }
+    }
+  }
+  .jd-market{
+    background-color: #fff;
+    margin-top: 0.2702702702702703rem;
+    box-shadow: 0rem 0rem 0.02702702702702703rem @border-color;
+    .market-title{
+      height: 0.8108108108108109rem;
+      line-height: 0.8108108108108109rem;
+      >h4{
+        margin-left: 0.5405405405405406rem;
+        position: relative;
+        font-weight: normal;
+        &::before{
+          content: '';
+          position: absolute;
+          height: 0.3783783783783784rem;
+          width: 0.10810810810810811rem;
+          background-color: @main-color;
+          left: -0.2702702702702703rem;
+          top: 0.21621621621621623rem;
+        }
+      }
+    }
+    .market-stuff{
+      display: flex;
+      > div{
+        flex: 1;
+        >a{
+          width: 100%;
+          display: block;
+          >img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
